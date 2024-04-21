@@ -1,5 +1,6 @@
 import React from 'react'
-import { Welcome } from "../app/_components/welcome/Welcome"
+import { Welcome } from "./_components/welcome/Welcome"
+
 
 const page = () => {
   return (
