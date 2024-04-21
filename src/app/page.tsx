@@ -1,5 +1,5 @@
 import React from 'react'
-import Welcome from "./_components/wel/Welcome"
+import Welcome from "./_components/nav/authnav"
 
 
 const page = () => {
