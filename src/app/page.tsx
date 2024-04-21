@@ -1,11 +1,11 @@
 import React from 'react'
-import Authnav from "./_components/nav/authnav"
+import Welcome from "./_components/Welcome/Welcome"
+
 
 const page = () => {
   return (
     <div>
-Fuck
-<Authnav />
+      <Welcome />
     </div>
   )
 }
