@@ -1,30 +1,12 @@
-import Link from "next/link";
+import React from 'react'
+import { Welcome } from "./_components/welcome/Welcome"
 
-import { CreatePost } from "~/app/_components/create-post";
-import { api } from "~/trpc/server";
-
-export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
-
+const page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <h3>Test</h3>
-    </main>
-  );
-}
-
-async function CrudShowcase() {
-  const latestPost = await api.post.getLatest();
-
-  return (
-    <div className="w-full max-w-xs">
-      {latestPost ? (
-        <p className="truncate">Your most recent post: {latestPost.name}</p>
-      ) : (
-        <p>You have no posts yet.</p>
-      )}
-
-      <CreatePost />
+    <div>
+      <Welcome />
     </div>
-  );
+  )
 }
+
+export default page
