@@ -2,7 +2,7 @@ import React from 'react'
 import { Title, Text, Anchor } from '@mantine/core';
 import classes from './Welcome.module.css';
 
-const welcome = () => {
+const Welcome = () => {
   return (
     <div>
         <Title className={classes.title} ta="center" mt={100}>
@@ -23,4 +23,4 @@ const welcome = () => {
   )
 }
 
-export default welcome
+export default Welcome
