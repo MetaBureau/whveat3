@@ -1,5 +1,5 @@
 import React from 'react'
-import Welcome from "./_components/Welcome/Welcome"
+import Welcome from "./_components/wel/Welcome"
 
 
 const page = () => {
